@@ -2,8 +2,8 @@ import { Facebook, Heart, Instagram, Mail, Phone, Search, ShoppingCart, Twitter,
 import { useState } from "react";
 
 export default function Header() {
-    const [open, setOpen] = useState(false); // shop dropdown
-    const [mobileMenu, setMobileMenu] = useState(false); // hamburger menü
+    const [open, setOpen] = useState(false);
+    const [mobileMenu, setMobileMenu] = useState(false);
 
     return (
         <>
