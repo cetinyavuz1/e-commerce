@@ -4,6 +4,7 @@ import { useState } from "react";
 export default function Header() {
     const [open, setOpen] = useState(false);
     const [mobileMenu, setMobileMenu] = useState(false);
+    const [search, setSearch] = useState(false);
 
     return (
         <>
@@ -30,8 +31,8 @@ export default function Header() {
                 </div>
             </div>
 
-            <div className="flex justify-between items-center px-6 py-4 h-[8vh]">
-                <p className="text-3xl font-bold text-[#252b42]">Bandage</p>
+            <div className={`${search ? "max-lg:flex max-lg:justify-center flex justify-between items-center px-6 py-4 h-[8vh]" : "flex justify-between items-center px-6 py-4 h-[8vh]"}`}>
+                <p className={`${search ? "max-lg:hidden" : ""} text-3xl font-bold text-[#252b42]`}>Bandage</p>
                 <nav className="hidden lg:flex gap-6 text-xl text-[#737373] font-semibold">
                     <a href="">Home</a>
                     <div
@@ -71,14 +72,25 @@ export default function Header() {
 
                 <div className="flex lg:flex gap-7 items-center">
                     <div className="flex gap-1 items-center">
-                        <User className="lg:text-[#23a6f0]" />
-                        <a href="" className="max-lg:hidden text-[#23a6f0] font-semibold text-xl">Login/Register</a>
+                        <User className={`${search ? "hidden" : ""} lg:text-[#23a6f0]`} />
+                        <a href="" className={`${search ? "hidden" : ""} max-lg:hidden text-[#23a6f0] font-semibold text-xl`}>Login/Register</a>
                     </div>
-                    <Search className="lg:text-[#23a6f0]" />
-                    <a href="" className="lg:text-[#23a6f0]"><ShoppingCart /></a>
-                    <a href="" className="max-lg:hidden lg:text-[#23a6f0]"><Heart /></a>
+                    <div className="flex">
+                        {search && (
+                            <input
+                                type="text"
+                                placeholder="Ara..."
+                                className="border border-[#DADADA] rounded-md bg-[#F5F5F5] text-black p-2 sm:w-72"
+                            />
+                        )}
+                        <button onClick={() => setSearch(!search)}>
+                            <Search className="lg:text-[#23a6f0]" />
+                        </button>
+                    </div>
+                    <a href="" className={`${search ? "hidden" : ""} lg:text-[#23a6f0]`}><ShoppingCart /></a>
+                    <a href="" className={`${search ? "hidden" : ""} max-lg:hidden lg:text-[#23a6f0]`}><Heart /></a>
                     <button
-                        className="lg:hidden"
+                        className={`${search ? "hidden" : ""} lg:hidden`}
                         onClick={() => setMobileMenu(!mobileMenu)}
                     >
                         {mobileMenu ? <X /> : <Menu />}
