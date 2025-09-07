@@ -14,7 +14,7 @@ export default function Slider() {
                 className="h-screen"
             >
                 <SwiperSlide>
-                    <div className="h-[100vh] bg-[url('/assets/sliders/slider.jpg')] flex lg:pl-80">
+                    <div className="h-[100vh] bg-[url('/public/assets/Sliders/Slider.jpg')] flex lg:pl-80">
                         <div className="flex flex-col justify-center items-center p-10 gap-10 lg:items-start">
                             <h6 className="text-white text-xl lg:text-2xl font-bold">SUMMER 2025</h6>
                             <h1 className="text-white text-4xl font-bold w-70 text-center lg:text-left lg:text-7xl lg:w-200">NEW COLLECTION</h1>
@@ -30,7 +30,7 @@ export default function Slider() {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div className="h-[100vh] bg-[url('/assets/sliders/slider.jpg')] flex lg:pl-80">
+                    <div className="h-[100vh] bg-[url('/public/assets/Sliders/Slider.jpg')] flex lg:pl-80">
                         <div className="flex flex-col justify-center items-center p-10 gap-10 lg:items-start">
                             <h6 className="text-white text-xl lg:text-2xl font-bold">SUMMER 2025</h6>
                             <h1 className="text-white text-4xl font-bold w-70 text-center lg:text-left lg:text-7xl lg:w-200">NEW COLLECTION</h1>
