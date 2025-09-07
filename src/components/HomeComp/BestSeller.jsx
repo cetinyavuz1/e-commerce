@@ -1,12 +1,12 @@
 export default function BestSeller() {
-    const images = ["/assets/productcard2/productcard2-1.jpg",
-        "/assets/productcard2/productcard2-2.jpg",
-        "/assets/productcard2/productcard2-3.jpg",
-        "/assets/productcard2/productcard2-4.jpg",
-        "/assets/productcard2/productcard2-5.jpg",
-        "/assets/productcard2/productcard2-6.jpg",
-        "/assets/productcard2/productcard2-7.jpg",
-        "/assets/productcard2/productcard2-8.jpg",
+    const images = ["/assets/ProductCard2/ProductCard2-1.jpg",
+        "/assets/ProductCard2/ProductCard2-2.jpg",
+        "/assets/ProductCard2/ProductCard2-3.jpg",
+        "/assets/ProductCard2/ProductCard2-4.jpg",
+        "/assets/ProductCard2/ProductCard2-5.jpg",
+        "/assets/ProductCard2/ProductCard2-6.jpg",
+        "/assets/ProductCard2/ProductCard2-7.jpg",
+        "/assets/ProductCard2/ProductCard2-8.jpg",
     ]
 
     return (
@@ -16,9 +16,9 @@ export default function BestSeller() {
                 <h3>BESTSELLER PRODUCTS</h3>
                 <p className="w-45 text-center text-sm text-[#959595] lg:w-[50vw]">Problems trying to resolve the conflict between</p>
                 <div>
-                    {images.map((elm, index) => {
-                        return <div key={index}>
-                            <img src={`/assets/ProductCard2/ProductCard2-${index + 1}.jpg`} alt="" />
+                    {images.map((elm) => {
+                        return <div>
+                            <img src={elm} alt="" />
                             <p>Graphic Design</p>
                             <p>English Department</p>
                             <p>$16.48 $6.48</p>
