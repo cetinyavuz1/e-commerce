@@ -1,12 +1,12 @@
 export default function BestSeller() {
-    const images = ["/public/assets/productcard2/productcard2-1.jpg",
-        "/public/assets/productcard2/productcard2-2.jpg",
-        "/public/assets/productcard2/productcard2-3.jpg",
-        "/public/assets/productcard2/productcard2-4.jpg",
-        "/public/assets/productcard2/productcard2-5.jpg",
-        "/public/assets/productcard2/productcard2-6.jpg",
-        "/public/assets/productcard2/productcard2-7.jpg",
-        "/public/assets/productcard2/productcard2-8.jpg",
+    const images = ["/assets/productcard2/productcard2-1.jpg",
+        "/assets/productcard2/productcard2-2.jpg",
+        "/assets/productcard2/productcard2-3.jpg",
+        "/assets/productcard2/productcard2-4.jpg",
+        "/assets/productcard2/productcard2-5.jpg",
+        "/assets/productcard2/productcard2-6.jpg",
+        "/assets/productcard2/productcard2-7.jpg",
+        "/assets/productcard2/productcard2-8.jpg",
     ]
 
     return (
@@ -18,7 +18,7 @@ export default function BestSeller() {
                 <div>
                     {images.map((elm, index) => {
                         return <div key={index}>
-                            <img src={`/public/assets/productcard2/productcard2-${index + 1}.jpg`} alt="" />
+                            <img src={`/assets/ProductCard2/ProductCard2-${index + 1}.jpg`} alt="" />
                             <p>Graphic Design</p>
                             <p>English Department</p>
                             <p>$16.48 $6.48</p>
