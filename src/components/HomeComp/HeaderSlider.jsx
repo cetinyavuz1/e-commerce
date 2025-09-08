@@ -5,7 +5,7 @@ import { Navigation } from "swiper/modules";
 
 
 
-export default function Slider() {
+export default function HeaderSlider() {
     return (
         <div className="relative">
             <Swiper
