@@ -42,10 +42,10 @@ export default function Header() {
                     >
                         <button className="flex items-center gap-1">Shop ▼</button>
                         {open && (
-                            <div className="absolute bg-white shadow-md p-4 top-full left-0 flex gap-30">
+                            <div className="absolute bg-white shadow-md p-4 top-full left-0 flex gap-[9rem] z-50">
                                 <div>
-                                    <h3 className="font-semibold text-[#252b42] mb-10">Kadın</h3>
-                                    <ul className="space-y-4">
+                                    <h3 className="font-bold text-[#252b42] mb-[2rem] mt-[1.5rem] ml-[1rem] underline">Kadın</h3>
+                                    <ul className="space-y-7  ml-[1rem] mb-[1.5rem]">
                                         <li><a href="">Bags</a></li>
                                         <li><a href="">Belts</a></li>
                                         <li><a href="">Cosmetics</a></li>
@@ -53,8 +53,8 @@ export default function Header() {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h3 className="font-semibold text-[#252b42] mb-10">Erkek</h3>
-                                    <ul className="space-y-4">
+                                    <h3 className="font-bold text-[#252b42] mb-[2rem] mt-[1.5rem] mr-[10rem] underline">Erkek</h3>
+                                    <ul className="space-y-7">
                                         <li><a href="">Bags</a></li>
                                         <li><a href="">Belts</a></li>
                                         <li><a href="">Cosmetics</a></li>
