@@ -1,5 +1,6 @@
 import { Facebook, Heart, Instagram, Mail, Phone, Search, ShoppingCart, Twitter, User, Youtube, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     const [open, setOpen] = useState(false);
@@ -34,7 +35,7 @@ export default function Header() {
             <div className={`${search ? "max-lg:flex max-lg:justify-center flex justify-between items-center px-6 py-4 h-[8vh]" : "flex justify-between items-center px-6 py-4 h-[8vh]"}`}>
                 <p className={`${search ? "max-lg:hidden" : ""} text-3xl font-bold text-[#252b42]`}>Bandage</p>
                 <nav className="hidden lg:flex gap-6 text-xl text-[#737373] font-semibold">
-                    <a href="">Home</a>
+                    <Link to="/">Home</Link>
                     <div
                         className="relative"
                         onMouseEnter={() => setOpen(true)}

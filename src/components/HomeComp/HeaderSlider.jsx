@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+import { Link } from "react-router";
 
 
 
@@ -21,9 +22,11 @@ export default function HeaderSlider() {
                             <p className="text-white mt-2 max-w-md text-center text-2xl lg:text-left lg:font-medium lg: text-2xl">
                                 We know hot large objects will act, but things on a small scale
                             </p>
-                            <button className="mt-4 px-6 py-2 bg-green-500 text-white font-semibold w-60 h-20 rounded-xl text-2xl">
-                                SHOP NOW
-                            </button>
+                            <Link to="/shop" className="w-60 h-20 rounded-xl">
+                                <button className="px-6 py-2 bg-green-500 text-white font-semibold w-60 h-20 rounded-xl text-2xl cursor-pointer">
+                                    SHOP NOW
+                                </button>
+                            </Link>
                         </div>
 
                     </div>
@@ -37,9 +40,11 @@ export default function HeaderSlider() {
                             <p className="text-white mt-2 max-w-md text-center text-2xl lg:text-left lg:font-medium lg: text-2xl">
                                 We know hot large objects will act, but things on a small scale
                             </p>
-                            <button className="mt-4 px-6 py-2 bg-green-500 text-white font-semibold w-60 h-20 rounded-xl text-2xl">
-                                SHOP NOW
-                            </button>
+                            <Link to="/shop" className="w-60 h-20 rounded-xl">
+                                <button className="px-6 py-2 bg-green-500 text-white font-semibold w-60 h-20 rounded-xl text-2xl cursor-pointer">
+                                    SHOP NOW
+                                </button>
+                            </Link>
                         </div>
 
                     </div>
