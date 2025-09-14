@@ -5,7 +5,8 @@ const productsSlice = createSlice({
     initialState: {
         items: [],
         currentPage: 1,
-        perPage: 12
+        perPage: 12,
+        perPageMobile: 5
     },
     reducers: {
         setProducts: (state, action) => {
