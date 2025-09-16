@@ -6,7 +6,7 @@ export default function Pagination({ currentPage, totalPages, onPageChange }) {
     const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
 
     return (
-        <nav className="inline-flex items-center space-x-2">
+        <nav className="inline-flex items-center space-x-2 py-10">
             <button
                 onClick={() => onPageChange(Math.max(1, currentPage - 1))}
                 disabled={currentPage === 1}

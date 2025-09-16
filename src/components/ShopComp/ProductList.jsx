@@ -26,7 +26,7 @@ export default function ProductList() {
 
     return (
         <div>
-            <div className="flex flex-col items-center gap-6 py-8">
+            <div className="flex flex-col items-center gap-6 py-8 lg:flex-row lg:justify-center lg:gap-108">
                 <p className="max-lg:hidden font-bold text-[#737373]">Showing all {perPage} results</p>
                 <p className="lg:hidden font-bold text-[#737373] text-xl">Showing all {perPageMobile} results</p>
                 <div className="flex flex-row gap-4 items-center">
@@ -61,7 +61,7 @@ export default function ProductList() {
                     )}
                 </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-lg:hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 max-lg:hidden px-60">
                 {paginatedItems.map((product) => (
                     <ProductCard key={product.id} product={product} />
                 ))}

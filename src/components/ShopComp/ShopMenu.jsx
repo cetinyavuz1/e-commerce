@@ -13,36 +13,36 @@ export default function ShopMenu() {
                         <p className="text-[#737373] font-bold text-xl">Shop</p>
                     </div>
                 </div>
-                <div className="flex flex-col gap-6 lg:flex-row">
-                    <div className="relative bg-[url('/assets/ShopPage/placeholder.jpg')] w-80 h-80 bg-contain flex items-center justify-center">
+                <div className="flex flex-col gap-6 lg:flex-row lg:w-[90vw]">
+                    <div className="relative bg-[url('/assets/ShopPage/placeholder.jpg')] w-[17vw] h-[35vh] bg-contain flex items-center justify-center">
                         <div className="absolute inset-0 bg-black/30"></div>
                         <div className="absolute text-2xl font-semibold text-white text-center flex flex-col gap-6">
                             <p>CLOTHS</p>
                             <p>5 Items</p>
                         </div>
                     </div>
-                    <div className="relative bg-[url('/assets/ShopPage/placeholder.jpg')] w-80 h-80 bg-contain flex items-center justify-center">
+                    <div className="relative bg-[url('/assets/ShopPage/placeholder.jpg')] w-[17vw] h-[35vh] bg-contain flex items-center justify-center">
                         <div className="absolute inset-0 bg-black/30"></div>
                         <div className="absolute text-2xl font-semibold text-white text-center flex flex-col gap-6">
                             <p>CLOTHS</p>
                             <p>5 Items</p>
                         </div>
                     </div>
-                    <div className="relative bg-[url('/assets/ShopPage/placeholder.jpg')] w-80 h-80 bg-contain flex items-center justify-center">
+                    <div className="relative bg-[url('/assets/ShopPage/placeholder.jpg')] w-[17vw] h-[35vh] bg-contain flex items-center justify-center">
                         <div className="absolute inset-0 bg-black/30"></div>
                         <div className="absolute text-2xl font-semibold text-white text-center flex flex-col gap-6">
                             <p>CLOTHS</p>
                             <p>5 Items</p>
                         </div>
                     </div>
-                    <div className="relative bg-[url('/assets/ShopPage/placeholder.jpg')] w-80 h-80 bg-contain flex items-center justify-center">
+                    <div className="relative bg-[url('/assets/ShopPage/placeholder.jpg')] w-[17vw] h-[35vh] bg-contain flex items-center justify-center">
                         <div className="absolute inset-0 bg-black/30"></div>
                         <div className="absolute text-2xl font-semibold text-white text-center flex flex-col gap-6">
                             <p>CLOTHS</p>
                             <p>5 Items</p>
                         </div>
                     </div>
-                    <div className="relative bg-[url('/assets/ShopPage/placeholder.jpg')] w-80 h-80 bg-contain flex items-center justify-center">
+                    <div className="relative bg-[url('/assets/ShopPage/placeholder.jpg')] w-[17vw] h-[35vh] bg-contain flex items-center justify-center">
                         <div className="absolute inset-0 bg-black/30"></div>
                         <div className="absolute text-2xl font-semibold text-white text-center flex flex-col gap-6">
                             <p>CLOTHS</p>
