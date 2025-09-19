@@ -13,7 +13,7 @@ const products = [
         department: "English Department",
         price: 6.48,
         oldPrice: 16.48,
-        image: "/assets/ProductCard1/ProductCard1-1.jpg"
+        image: "/assets/ProductCard1/ProductCard1-2.jpg"
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const products = [
         department: "English Department",
         price: 6.48,
         oldPrice: 16.48,
-        image: "/assets/ProductCard1/ProductCard1-1.jpg"
+        image: "/assets/ProductCard1/ProductCard1-3.jpg"
     },
     {
         id: 4,
